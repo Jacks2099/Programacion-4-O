@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import matplotlib as plt
 import numpy as np
 
 st.title('_Curvas de Titulación_')
@@ -42,8 +43,15 @@ if option == 'Acido-Base Fuerte':
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
       
-      chart_data = pd.DataFrame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]})
-      st.line_chart(chart_data)
+      df = pd.DataFrame({'Volumen':[1, 2, 3],
+                   'pH':[ph1, ph2, ph3]})
+      df = df.set_index('Volumen')
+      fig, ax = plt.subplots()
+      df.plot(ax = ax)
+      ax.set_title('Curva Acido-Base', loc = "Center", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
+      ax.set_xlabel("Volumen usado", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
+      ax.set_ylabel("pH")
+      plt.show()
       
   elif volumen == '6':
       a= st.text_input("Ingresa volumen 1:", value=" ")
