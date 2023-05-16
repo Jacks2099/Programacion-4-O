@@ -4,9 +4,9 @@ import numpy as np
 
 st.title('_Curvas de Titulación_')
 
-button1 = st.button('Acido-Base Fuerte')
-button2 = st.button('Acido Fuerte-Base Debil')
-button3 = st.button('Acido Debil-Base Fuerte')
+button1 = nested_btn = st.button('Acido-Base Fuerte')
+button2 = nested_btn = st.button('Acido Fuerte-Base Debil')
+button3 = nested_btn = st.button('Acido Debil-Base Fuerte')
 
 if button1:
   option = st.selectbox(
