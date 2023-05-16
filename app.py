@@ -44,7 +44,7 @@ if button1:
     
     st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
 
- elif 6:
+  elif 6:
     a= st.text_input("Ingresa volumen 1:", value=" ")
     b= st.text_input("Ingresa volumen 2:", value=" ")
     c= st.text_input("Ingresa volumen 3:", value=" ")
