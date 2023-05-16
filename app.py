@@ -6,7 +6,7 @@ st.title('_Curvas de Titulación_')
 
 option = st.selectbox(
   'Selecciona el tipo de curva',
-  ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte')
+  ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
 
 if 'Acido-Base Fuerte':
   option = st.selectbox(
