@@ -4,11 +4,11 @@ import numpy as np
 
 st.title('_Curvas de Titulación_')
 
-button1 = st.button('Acido-Base Fuerte')
-button2 = st.button('Acido Fuerte-Base Debil')
-button3 = st.button('Acido Debil-Base Fuerte')
+option = st.selectbox(
+  'Selecciona el tipo de curva',
+  ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte')
 
-if button1:
+if 'Acido-Base Fuerte':
   option = st.selectbox(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
