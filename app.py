@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.title('_Curvas de Titulación_')
+
 button1 = st.button('Acido-Base Fuerte')
 button2 = st.button('Acido Fuerte-Base Debil')
 button3 = st.button('Acido Debil-Base Fuerte')
@@ -11,11 +13,11 @@ if button1:
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if '5':
-    a= st.write(float(input("Ingresa volumen 1: ")))
-    b=float(input("Ingresa volumen 2: "))
-    c=float(input("Ingresa volumen 3: "))
-    d=float(input("Ingresa volumen 4: "))
-    e=float(input("Ingresa volumen 4: "))
+    a= st.input("Ingresa volumen 1: ")))
+    b= st.input("Ingresa volumen 2: "))
+    c= st.input("Ingresa volumen 3: "))
+    d= st.input("Ingresa volumen 4: "))
+    e= st.input("Ingresa volumen 4: "))
     
     ph1= np.log10(v)*-1
     ph2= np.log10(w)*-1
