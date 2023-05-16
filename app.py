@@ -4,7 +4,7 @@ import numpy as np
 
 st.title('_Curvas de Titulación_')
 
-option = st.selectbox(
+option = st.radio(
   'Selecciona el tipo de curva',
   ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
 
