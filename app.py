@@ -21,4 +21,4 @@ print("pH=-log10("+str(x)+")= "+str(np.round(ph1, 2)))
 print("pH=-log10("+str(y)+")= "+str(np.round(ph2, 2)))
 print("pH=-log10("+str(z)+")= "+str(np.round(ph3, 2)))
 
-st.line_chart(data=pd.DataFrame, *, x='Volumen', y='pH')
+st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
