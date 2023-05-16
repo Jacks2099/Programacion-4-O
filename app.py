@@ -8,11 +8,11 @@ option = st.selectbox(
   'Selecciona el tipo de curva',
   ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
 
-if 'Acido-Base Fuerte':
+if Acido-Base Fuerte:
   option = st.selectbox(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
-  if '5':
+  if 5:
     a= st.text_input("Ingresa volumen 1:", value=" ")
     b= st.text_input("Ingresa volumen 2:", value=" ")
     c= st.text_input("Ingresa volumen 3:", value=" ")
@@ -44,7 +44,7 @@ if 'Acido-Base Fuerte':
     
     st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
 
-  elif '6':
+  elif 6:
     a= st.text_input("Ingresa volumen 1:", value=" ")
     b= st.text_input("Ingresa volumen 2:", value=" ")
     c= st.text_input("Ingresa volumen 3:", value=" ")
@@ -80,7 +80,7 @@ if 'Acido-Base Fuerte':
     
     st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
 
-elif 'Acido Fuerte-Base Debil':
+elif Acido Fuerte-Base Debil:
   st.write('En proceso:hammer:')
-elif 'Acido Debil-Base Fuerte':
+elif Acido Debil-Base Fuerte:
   st.write('En proceso:hammer:')
