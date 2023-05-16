@@ -12,7 +12,7 @@ if 'Acido-Base Fuerte':
   option = st.selectbox(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
-    if '5':
+  if '5':
       a= st.text_input("Ingresa volumen 1:", value=" ")
       b= st.text_input("Ingresa volumen 2:", value=" ")
       c= st.text_input("Ingresa volumen 3:", value=" ")
@@ -44,7 +44,7 @@ if 'Acido-Base Fuerte':
       
       chart_frame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]})
       
-    elif '6':
+  elif '6':
       a= st.text_input("Ingresa volumen 1:", value=" ")
       b= st.text_input("Ingresa volumen 2:", value=" ")
       c= st.text_input("Ingresa volumen 3:", value=" ")
