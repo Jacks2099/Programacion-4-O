@@ -21,9 +21,9 @@ if option == 'Acido-Base Fuerte':
       
       v= 0.1
       w= 0.01
-      x= 0.001
-      y= 0.0001
-      z= 0.00001
+      x= 1e-7
+      y= 1e-10
+      z= 1e-12
       
       ph1= np.log10(v)*-1
       ph2= np.log10(w)*-1
