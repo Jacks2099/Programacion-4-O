@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
@@ -22,12 +21,4 @@ print("pH=-log10("+str(x)+")= "+str(np.round(ph1, 2)))
 print("pH=-log10("+str(y)+")= "+str(np.round(ph2, 2)))
 print("pH=-log10("+str(z)+")= "+str(np.round(ph3, 2)))
 
-df = pd.DataFrame({'Volumen':[1, 2, 3],
-                   'pH':[ph1, ph2, ph3]})
-df = df.set_index('Volumen')
-fig, ax = plt.subplots()
-df.plot(ax = ax)
-ax.set_title('Curva Acido-Base', loc = "Center", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
-ax.set_xlabel("Volumen usado", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
-ax.set_ylabel("pH")
-plt.show()
+st.line_chart(data=pd.DataFrame, *, x='Volumen', y='pH')
