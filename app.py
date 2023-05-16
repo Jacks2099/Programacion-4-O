@@ -51,7 +51,7 @@ if option == 'Acido-Base Fuerte':
       ax.set_title('Curva Acido-Base', loc = "Center", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
       ax.set_xlabel("Volumen usado", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
       ax.set_ylabel("pH")
-      plt.show()
+      st.pyplot(fig)
       
   elif volumen == '6':
       a= st.text_input("Ingresa volumen 1:", value=" ")
