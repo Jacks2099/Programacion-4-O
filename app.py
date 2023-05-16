@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.button1('Acido-Base Fuerte')
-st.button2('Acido Fuerte-Base Debil')
-st.button3('Acido Debil-Base Fuerte')
+st.button_1('Acido-Base Fuerte')
+st.button_2('Acido Fuerte-Base Debil')
+st.button_3('Acido Debil-Base Fuerte')
 
-if button1:
+if button_1:
   x=float(input(""))
   y=float(input(""))
   z=float(input(""))
