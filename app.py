@@ -13,11 +13,11 @@ if button1:
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if '5':
-    a= st.write("Ingresa volumen 1:", value=" ")
-    b= st.write("Ingresa volumen 2:", value=" ")
-    c= st.write("Ingresa volumen 3:", value=" ")
-    d= st.write("Ingresa volumen 4:", value=" ")
-    e= st.write("Ingresa volumen 5:", value=" ")
+    a= st.text_input("Ingresa volumen 1:", value=" ")
+    b= st.text_input("Ingresa volumen 2:", value=" ")
+    c= st.text_input("Ingresa volumen 3:", value=" ")
+    d= st.text_input("Ingresa volumen 4:", value=" ")
+    e= st.text_input("Ingresa volumen 5:", value=" ")
     
     v= 0.1
     w= 0.01
@@ -45,11 +45,11 @@ elif button2:
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if '5':
-    a= st.write("Ingresa volumen 1:", value=" ")
-    b= st.write("Ingresa volumen 2:", value=" ")
-    c= st.write("Ingresa volumen 3:", value=" ")
-    d= st.write("Ingresa volumen 4:", value=" ")
-    e= st.write("Ingresa volumen 5:", value=" ")
+    a= st.text_input("Ingresa volumen 1:", value=" ")
+    b= st.text_input("Ingresa volumen 2:", value=" ")
+    c= st.text_input("Ingresa volumen 3:", value=" ")
+    d= st.text_input("Ingresa volumen 4:", value=" ")
+    e= st.text_input("Ingresa volumen 5:", value=" ")
     
     v= 0.1
     w= 0.01
@@ -76,11 +76,11 @@ elif button3:
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if '5':
-    a= st.write("Ingresa volumen 1:", value=" ")
-    b= st.write("Ingresa volumen 2:", value=" ")
-    c= st.write("Ingresa volumen 3:", value=" ")
-    d= st.write("Ingresa volumen 4:", value=" ")
-    e= st.write("Ingresa volumen 5:", value=" ")
+    a= st.text_input("Ingresa volumen 1:", value=" ")
+    b= st.text_input("Ingresa volumen 2:", value=" ")
+    c= st.text_input("Ingresa volumen 3:", value=" ")
+    d= st.text_input("Ingresa volumen 4:", value=" ")
+    e= st.text_input("Ingresa volumen 5:", value=" ")
     
     v= 0.1
     w= 0.01
