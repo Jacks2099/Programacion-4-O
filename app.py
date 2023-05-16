@@ -34,9 +34,13 @@ if button1:
     datos=pd.DataFrame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5"])
     datos
     
+    st.header('Cálculos')
+    
     st.write("pH=-log10("+str(x)+")= "+str(np.round(ph1, 2)))
     st.write("pH=-log10("+str(y)+")= "+str(np.round(ph2, 2)))
     st.write("pH=-log10("+str(z)+")= "+str(np.round(ph3, 2)))
+    st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
+    st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
     
   st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
 
@@ -66,9 +70,13 @@ elif button2:
     datos=pd.DataFrame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5"])
     datos
     
+    st.header('Cálculos')
+    
     st.write("pH=-log10("+str(x)+")= "+str(np.round(ph1, 2)))
     st.write("pH=-log10("+str(y)+")= "+str(np.round(ph2, 2)))
     st.write("pH=-log10("+str(z)+")= "+str(np.round(ph3, 2)))
+    st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
+    st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
     
   st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
 elif button3:
@@ -97,8 +105,12 @@ elif button3:
     datos=pd.DataFrame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5"])
     datos
     
+    st.header('Cálculos')
+    
     st.write("pH=-log10("+str(x)+")= "+str(np.round(ph1, 2)))
     st.write("pH=-log10("+str(y)+")= "+str(np.round(ph2, 2)))
     st.write("pH=-log10("+str(z)+")= "+str(np.round(ph3, 2)))
+    st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
+    st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
     
   st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
