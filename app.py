@@ -11,7 +11,7 @@ if button1:
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if '5':
-    a=float(input("Ingresa volumen 1: "))
+    a= st.write(float(input("Ingresa volumen 1: ")))
     b=float(input("Ingresa volumen 2: "))
     c=float(input("Ingresa volumen 3: "))
     d=float(input("Ingresa volumen 4: "))
