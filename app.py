@@ -4,12 +4,12 @@ import numpy as np
 
 st.title('_Curvas de Titulación_')
 
-option = st.radio(
+option = st.selectbox(
   'Selecciona el tipo de curva',
   ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
 
 if option == 'Acido-Base Fuerte':
-  volumen = st.selectbox(
+  volumen = st.radio(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if volumen == '5':
