@@ -13,11 +13,17 @@ if button1:
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if '5':
-    a= st.input("Ingresa volumen 1: ")))
-    b= st.input("Ingresa volumen 2: "))
-    c= st.input("Ingresa volumen 3: "))
-    d= st.input("Ingresa volumen 4: "))
-    e= st.input("Ingresa volumen 4: "))
+    a= st.input("Ingresa volumen 1: ")
+    b= st.input("Ingresa volumen 2: ")
+    c= st.input("Ingresa volumen 3: ")
+    d= st.input("Ingresa volumen 4: ")
+    e= st.input("Ingresa volumen 5: ")
+    
+    v= 0.1
+    w= 0.01
+    x= 0.001
+    y= 0.0001
+    z= 0.00001
     
     ph1= np.log10(v)*-1
     ph2= np.log10(w)*-1
