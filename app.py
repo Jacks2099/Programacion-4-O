@@ -8,7 +8,7 @@ option = st.radio(
   'Selecciona el tipo de curva',
   ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
 
-if 'Acido-Base Fuerte':
+if option == 'Acido-Base Fuerte':
   option = st.selectbox(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
@@ -80,7 +80,7 @@ if 'Acido-Base Fuerte':
       
       st.line_chart(data=pd.DataFrame, x='Volumen', y='pH')
 
-elif 'Acido Fuerte-Base Debil':
+elif option == 'Acido Fuerte-Base Debil':
   st.write('En proceso:hammer:')
-elif 'Acido Debil-Base Fuerte':
+elif option == 'Acido Debil-Base Fuerte':
   st.write('En proceso:hammer:')
