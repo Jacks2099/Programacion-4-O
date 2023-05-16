@@ -42,6 +42,7 @@ if option == 'Acido-Base Fuerte':
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
       
+      chart_data = pd.DataFrame({'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=[a, b, c, d, e])
       st.line_chart(datos)
       
   elif volumen == '6':
