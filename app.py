@@ -7,7 +7,11 @@ st.title('_Curvas de Titulación_')
 option = st.selectbox(
   'Selecciona el tipo de curva',
   ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
-
+mA = 0
+mT1 = 0
+mT2 = 0
+mT3 = 0
+mT4 = 0
 CA = st.text_input("Ingresa la concentración del _analito_:", value=" ")
 VA = st.text_input("Ingresa volumen del _analito_:", value=" ")
 CT = st.text_input("Ingresa la concentración del _titulante_:", value=" ")
