@@ -22,16 +22,16 @@ if option == 'Acido-Base Fuerte':
       c= st.text_input("Ingresa volumen 3:", value=" ")
       d= st.text_input("Ingresa volumen 4:", value=" ")
       
-      mmolA = (CA*VA)
-      mmolT1 = (CT*a)
-      mmolT2 = (CT*b)
-      mmolT3 = (CT*c)
-      mmolT4 = (CT*d)
+      mA = (CA*VA)
+      mT1 = (CT*a)
+      mT2 = (CT*b)
+      mT3 = (CT*c)
+      mT4 = (CT*d)
       
-      C1= (mmolA-mmolT1)/(VA+a)
-      C2= (mmolA-mmolT2)/(VA+b)
-      C3= (mmolA-mmolT3)/(VA+c)
-      C4= (mmolA-mmolT4)/(VA+d)
+      C1= (mA-mT1)/(VA+a)
+      C2= (mA-mT2)/(VA+b)
+      C3= (mA-mT3)/(VA+c)
+      C4= (mA-mT4)/(VA+d)
       
       ph1= np.log10(CA)*-1
       ph2= np.log10(C1)*-1
