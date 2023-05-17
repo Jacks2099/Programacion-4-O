@@ -19,11 +19,11 @@ if option == 'Acido-Base Fuerte':
       d= st.text_input("Ingresa volumen 4:", value=" ")
       e= st.text_input("Ingresa volumen 5:", value=" ")
       
-      C1= 0.03333
-      C2= 5.5555e-3
+      C1= 0.05
+      C2= 0.0125
       C3= 1e-7
-      C4= 4.5454e-3
-      C5= 0.01666
+      C4= 8.33e-3
+      C5= 0.01429
       
       ph1= 14+np.log10(C1)
       ph2= 14+np.log10(C2)
@@ -42,7 +42,7 @@ if option == 'Acido-Base Fuerte':
       st.write("pH=-log10("+str(C4)+")= "+str(np.round(ph4, 2)))
       st.write("pH=-log10("+str(C5)+")= "+str(np.round(ph5, 2)))
       
-      st.line_chart(datos, x='volume', y='pH')
+      st.line_chart(datos, x='Volumen', y='pH')
       
   elif volumen == '6':
       a= st.text_input("Ingresa volumen 1:", value=" ")
@@ -57,7 +57,7 @@ if option == 'Acido-Base Fuerte':
       C3= 5.5555e-3
       C4= 4.5454e-3
       C5= 0.01154
-      C6= 0.01666
+      C6= 0.01429
       
       ph1= 14+np.log10(C1)
       ph2= 14+np.log10(C2)
@@ -95,7 +95,7 @@ if option == 'Acido-Base Fuerte':
       C4= 1e-7
       C5= 4.5454e-3
       C6= 0.01154
-      C7= 0.01666
+      C7= 0.01429
       
       ph1= 14+np.log10(C1)
       ph2= 14+np.log10(C2)
