@@ -11,7 +11,7 @@ option = st.selectbox(
 CA = st.text_input("Ingresa la concentración del _analito_:", value=" ")
 VA = st.text_input("Ingresa volumen del _analito_:", value=" ")
 CT = st.text_input("Ingresa la concentración del _titulante_:", value=" ")
-mmolA = CA*VA
+mmolA = np.multiply(CA, VA)
 
 if option == 'Acido-Base Fuerte':
   volumen = st.radio(
@@ -23,10 +23,10 @@ if option == 'Acido-Base Fuerte':
       c= st.text_input("Ingresa volumen 3:", value=" ")
       d= st.text_input("Ingresa volumen 4:", value=" ")
 
-      mmolT1 = CT*a
-      mmolT2 = CT*b
-      mmolT3 = CT*c
-      mmolT4 = CT*d
+      mmolT1 = np.multiply(CT,a)
+      mmolT2 = np.multiply(CT,b)
+      mmolT3 = np.multiply(CT,c)
+      mmolT4 = np.multiply(CT,d)
       
       C1= (mmolA-mmolT1)/(VA+a)
       C2= (mmolA-mmolT2)/(VA+b)
