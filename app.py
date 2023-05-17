@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-backend: TkAgg >> .matplotlib/matplotlibrc
+backend: TkAgg >> matplotlib/matplotlibrc
 
 st.title('_Curvas de Titulación_')
 
