@@ -25,8 +25,8 @@ if option == 'Acido-Base Fuerte':
       y= 8.33e-3
       z= 0.01666
       
-      ph1= 14+np.log10(v)*-1
-      ph2= 14+np.log10(w)*-1
+      ph1= 14+np.log10(v)
+      ph2= 14+np.log10(w)
       ph3= np.log10(x)*-1
       ph4= np.log10(y)*-1
       ph5= np.log10(z)*-1
