@@ -19,14 +19,14 @@ if option == 'Acido-Base Fuerte':
       d= st.text_input("Ingresa volumen 4:", value=" ")
       e= st.text_input("Ingresa volumen 5:", value=" ")
       
-      v= 0.1
-      w= 0.01
+      v= 0.03333
+      w= 0.0125
       x= 1e-7
-      y= 1e-10
-      z= 1e-12
+      y= 8.33e-3
+      z= 0.01666
       
-      ph1= np.log10(v)*-1
-      ph2= np.log10(w)*-1
+      ph1= np.log10(v)*+14
+      ph2= np.log10(w)*+14
       ph3= np.log10(x)*-1
       ph4= np.log10(y)*-1
       ph5= np.log10(z)*-1
