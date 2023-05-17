@@ -20,9 +20,9 @@ if option == 'Acido-Base Fuerte':
       e= st.text_input("Ingresa volumen 5:", value=" ")
       
       v= 0.03333
-      w= 0.0125
+      w= 5.5555e-3
       x= 1e-7
-      y= 8.33e-3
+      y= 4.5454e-3
       z= 0.01666
       
       ph1= 14+np.log10(v)
