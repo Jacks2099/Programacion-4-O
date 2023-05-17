@@ -25,8 +25,8 @@ if option == 'Acido-Base Fuerte':
       y= 8.33e-3
       z= 0.01666
       
-      ph1= np.log10(v)*+14
-      ph2= np.log10(w)*+14
+      ph1= np.log10(v)*-1
+      ph2= np.log10(w)*-1
       ph3= np.log10(x)*-1
       ph4= np.log10(y)*-1
       ph5= np.log10(z)*-1
@@ -36,8 +36,8 @@ if option == 'Acido-Base Fuerte':
       
       st.header('Cálculos')
       
-      st.write("pH=-log10("+str(x)+")= "+str(np.round(ph1, 2)))
-      st.write("pH=-log10("+str(y)+")= "+str(np.round(ph2, 2)))
+      st.write("pH=14+log10("+str(x)+")= "+str(np.round(ph1, 2)))
+      st.write("pH=14+log10("+str(y)+")= "+str(np.round(ph2, 2)))
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph3, 2)))
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
       st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
