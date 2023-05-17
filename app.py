@@ -72,12 +72,12 @@ if option == 'Acido-Base Fuerte':
       
       st.header('Cálculos')
       
-      st.write("pH=14+log10("+str(x)+")= "+str(np.round(ph1, 2)))
-      st.write("pH=14+log10("+str(y)+")= "+str(np.round(ph2, 2)))
-      st.write("pH=14+log10("+str(z)+")= "+str(np.round(ph3, 2)))
-      st.write("pH=-log10("+str(z)+")= "+str(np.round(ph4, 2)))
-      st.write("pH=-log10("+str(z)+")= "+str(np.round(ph5, 2)))
-      st.write("pH=-log10("+str(z)+")= "+str(np.round(ph6, 2)))
+      st.write("pH=14+log10("+str(C1)+")= "+str(np.round(ph1, 2)))
+      st.write("pH=14+log10("+str(C2)+")= "+str(np.round(ph2, 2)))
+      st.write("pH=14+log10("+str(C3)+")= "+str(np.round(ph3, 2)))
+      st.write("pH=-log10("+str(C4)+")= "+str(np.round(ph4, 2)))
+      st.write("pH=-log10("+str(C5)+")= "+str(np.round(ph5, 2)))
+      st.write("pH=-log10("+str(C6)+")= "+str(np.round(ph6, 2)))
       
       st.line_chart(datos, x='Volumen', y='pH')
 
