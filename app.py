@@ -80,7 +80,7 @@ if option == 'Acido-Base Fuerte':
       
       st.line_chart(datos, x='Volumen', y='pH')
       
-   elif volumen == '7':
+  elif volumen == '7':
       a= st.text_input("Ingresa volumen 1:", value=" ")
       b= st.text_input("Ingresa volumen 2:", value=" ")
       c= st.text_input("Ingresa volumen 3:", value=" ")
