@@ -33,11 +33,11 @@ if option == 'Acido-Base Fuerte':
       C3= (float(mA)-float(mT3))/(float(VA)+float(c))
       C4= (float(mA)-float(mT4))/(float(VA)+float(d))
       
-      ph1= np.log10(CA)*-1
-      ph2= np.log10(C1)*-1
-      ph3= np.log10(C2)*-1
-      ph4= np.log10(C3)*-1
-      ph5= np.log10(C4)*-1
+      ph1= np.log10(float(CA))*-1
+      ph2= np.log10(float(C1))*-1
+      ph3= np.log10(float(C2))*-1
+      ph4= np.log10(float(C3))*-1
+      ph5= np.log10(float(C4))*-1
       
       datos=pd.DataFrame({'Volumen': [0, a, b, c, d], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5"])
       datos
