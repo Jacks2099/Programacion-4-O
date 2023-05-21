@@ -28,10 +28,10 @@ if option == 'Acido-Base Fuerte':
       mT3 = np.multiply(float(CT), float(c))
       mT4 = np.multiply(float(CT), float(d))
       
-      C1= (mA-mT1)/(VA+a)
-      C2= (mA-mT2)/(VA+b)
-      C3= (mA-mT3)/(VA+c)
-      C4= (mA-mT4)/(VA+d)
+      C1= (float(mA)-float(mT1))/(float(VA)+float(a))
+      C2= (float(mA)-float(mT2))/(float(VA)+float(b))
+      C3= (float(mA)-float(mT3))/(float(VA)+float(c))
+      C4= (float(mA)-float(mT4))/(float(VA)+float(d))
       
       ph1= np.log10(CA)*-1
       ph2= np.log10(C1)*-1
