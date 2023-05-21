@@ -22,7 +22,7 @@ if option == 'Acido-Base Fuerte':
       c= st.text_input("Ingresa volumen 3:", value=" ")
       d= st.text_input("Ingresa volumen 4:", value=" ")
       
-      mA = np.multiply(float=(CA), float(VA))
+      mA = np.multiply(float(CA), float(VA))
       mT1 = np.multiply(float(CT), float(a))
       mT2 = np.multiply(float(CT), float(b))
       mT3 = np.multiply(float(CT), float(c))
