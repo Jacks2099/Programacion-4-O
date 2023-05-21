@@ -8,25 +8,25 @@ option = st.selectbox(
   'Selecciona el tipo de curva',
   ('Acido-Base Fuerte', 'Acido Fuerte-Base Debil', 'Acido Debil-Base Fuerte'))
 
-CA = st.number_input("Ingresa la concentración del _analito_:", value=" ")
-VA = st.number_input("Ingresa volumen del _analito_:", value=" ")
-CT = st.number_input("Ingresa la concentración del _titulante_:", value=" ")
+CA = st.text_input("Ingresa la concentración del _analito_:", value=" ")
+VA = st.text_input("Ingresa volumen del _analito_:", value=" ")
+CT = st.text_input("Ingresa la concentración del _titulante_:", value=" ")
 
 if option == 'Acido-Base Fuerte':
   volumen = st.radio(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
   if volumen == '5':
-      a= st.number_input("Ingresa volumen 1:", value=" ")
-      b= st.number_input("Ingresa volumen 2:", value=" ")
-      c= st.number_input("Ingresa volumen 3:", value=" ")
-      d= st.number_input("Ingresa volumen 4:", value=" ")
+      a= st.text_input("Ingresa volumen 1:", value=" ")
+      b= st.text_input("Ingresa volumen 2:", value=" ")
+      c= st.text_input("Ingresa volumen 3:", value=" ")
+      d= st.text_input("Ingresa volumen 4:", value=" ")
       
-      mA = np.multiply(CA, VA)
-      mT1 = np.multiply(CT, a)
-      mT2 = np.multiply(CT, b)
-      mT3 = np.multiply(CT, c)
-      mT4 = np.multiply(CT, d)
+      mA = np.multiply(float=(CA), float(VA))
+      mT1 = np.multiply(float(CT), float(a))
+      mT2 = np.multiply(float(CT), float(b))
+      mT3 = np.multiply(float(CT), float(c))
+      mT4 = np.multiply(float(CT), float(d))
       
       C1= (mA-mT1)/(VA+a)
       C2= (mA-mT2)/(VA+b)
