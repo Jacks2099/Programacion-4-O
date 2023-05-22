@@ -156,4 +156,4 @@ if option == 'Acido-Base (Fuertes)':
 elif option == 'Base-Acido (Fuertes)':
   st.write('En proceso:hammer:')
 elif option == 'Experimental':
-  st.write('En proceso:hammer:')
+  ph1=st.text_input('Ingresa el primer pH:', value=' ')
