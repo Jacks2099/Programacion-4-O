@@ -73,7 +73,7 @@ if option == 'Acido-Base (Fuertes)':
       datos=pd.DataFrame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5"])
       datos
       
-      st.line_chart(datos, x='Volumen', y='pH')
+      st.line_chart(datos, x=[a, b, c, d, e], y='pH')
       
   elif volumen == '6':
       st.write('En proceso:hammer:')
