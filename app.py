@@ -516,7 +516,7 @@ if option == 'Acido-Base (Fuertes)':
         C10= (float(mT10)-float(mA))/(float(VA)+float(j))
         ph10= 14+np.log10(float(C10))
       
-      datos=pd.DataFrame({'Volumen': [a, b, c, d, e, f, g, h, i, j], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2), np.round(ph6, 2), np.round(ph7, 2), np.round(ph8, 2), np.round(ph9, 2), np.round(ph10, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5", "Lab 6", "Lab 7", "Lab 8", "Lab 9", "Lab 1O"])
+      datos=pd.DataFrame({'Volumen': [a, b, c, d, e, f, g, h, i, j], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2), np.round(ph6, 2), np.round(ph7, 2), np.round(ph8, 2), np.round(ph9, 2), np.round(ph10, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5", "Lab 6", "Lab 7", "Lab 8", "Lab 9", "Lab -10"])
       datos
       
       st.line_chart(datos, x=[a, b, c, d, e, f, g, h, i, j], y='pH')
