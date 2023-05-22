@@ -437,4 +437,4 @@ elif option == 'Experimental':
   datos
   st.line_chart(datos, x=[a, b, c, d, e, f, g], y='pH')
   
-st.write(Made by Fernando Aguilera, Andrés Fernández y Gael Arámbula)
+st.write("Made by Fernando Aguilera, Andrés Fernández y Gael Arámbula")
