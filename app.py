@@ -8,11 +8,12 @@ option = st.selectbox(
   'Selecciona el tipo de curva',
   ('Acido-Base (Fuertes)', 'Base-Acido (Fuertes)', 'Experimental'))
 
-CA = st.text_input("Ingresa la concentración del _analito_:", value=" ")
-VA = st.text_input("Ingresa volumen del _analito_:", value=" ")
-CT = st.text_input("Ingresa la concentración del _titulante_:", value=" ")
-
 if option == 'Acido-Base (Fuertes)':
+  
+  CA = st.text_input("Ingresa la concentración del _analito_:", value=" ")
+  VA = st.text_input("Ingresa volumen del _analito_:", value=" ")
+  CT = st.text_input("Ingresa la concentración del _titulante_:", value=" ")
+  
   volumen = st.radio(
     '¿Cuantos volumenes requieres?',
     ('5', '6', '7', '8', '9', '10'))
