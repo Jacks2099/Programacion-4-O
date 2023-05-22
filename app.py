@@ -412,7 +412,7 @@ if option == 'Acido-Base (Fuertes)':
       
       st.line_chart(datos, x=[a, b, c, d, e, f, g, h, i], y='pH')
       
-  elif volumen == '9':
+  elif volumen == '10':
       a= st.text_input("Ingresa volumen 1:", value=" ")
       b= st.text_input("Ingresa volumen 2:", value=" ")
       c= st.text_input("Ingresa volumen 3:", value=" ")
@@ -422,7 +422,7 @@ if option == 'Acido-Base (Fuertes)':
       g= st.text_input("Ingresa volumen 7:", value=" ")
       h= st.text_input("Ingresa volumen 8:", value=" ")
       i= st.text_input("Ingresa volumen 9:", value=" ")
-      j= st.text_input("Ingresa volumen 9:", value=" ")
+      j= st.text_input("Ingresa volumen 10:", value=" ")
       
       mA = np.multiply(float(CA), float(VA))
       mT1 = np.multiply(float(CT), float(a))
