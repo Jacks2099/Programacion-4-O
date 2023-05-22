@@ -55,20 +55,20 @@ if option == 'Acido-Base (Fuertes)':
       if mT4<mA:
         C4= (float(mA)-float(mT4))/(float(VA)+float(d))
         ph4= np.log10(float(C4))*-1
-      elif mT3=mA:
+      elif mT4=mA:
         ph4==7
-      elif mT3>mA:
+      elif mT4>mA:
         C4= (float(mT4)-float(mA))/(float(VA)+float(d))
         ph4= 14+np.log10(float(C4))
       mT5 = np.multiply(float(CT), float(e))
-      
-      C3= (float(mA)-float(mT3))/(float(VA)+float(c))
-      C4= (float(mA)-float(mT4))/(float(VA)+float(d))
-      C4= (float(mA)-float(mT5))/(float(VA)+float(e))
-      
-      ph3= np.log10(float(C3))*-1
-      ph4= np.log10(float(C4))*-1
-      ph5= np.log10(float(C5))*-1
+      if mT4<mA:
+        C5= (float(mA)-float(mT5))/(float(VA)+float(e))
+        ph5= np.log10(float(C4))*-1
+      elif mT4=mA:
+        ph5==7
+      elif mT4>mA:
+        C5= (float(mT5)-float(mA))/(float(VA)+float(e))
+        ph5= 14+np.log10(float(C5))
       
       datos=pd.DataFrame({'Volumen': [a, b, c, d, e], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5"])
       datos
