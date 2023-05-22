@@ -436,3 +436,9 @@ elif option == 'Experimental':
   datos=pd.DataFrame({'Volumen': [a, b, c, d, e, f, g], 'pH':[np.round(ph1, 2), np.round(ph2, 2), np.round(ph3, 2), np.round(ph4, 2), np.round(ph5, 2), np.round(ph6, 2), np.round(ph7, 2)]}, index=["Lab 1", "Lab 2", "Lab 3", "Lab 4", "Lab 5", "Lab 6", "Lab 7"])
   datos
   st.line_chart(datos, x=[a, b, c, d, e, f, g], y='pH')
+  
+boton = st.button(Créditos)
+if boton:
+  with st.sidebar:
+    with st.echo():
+        st.write("Made by Fernando Aguilera, Gael Arambula y Andrés Fernández.")
