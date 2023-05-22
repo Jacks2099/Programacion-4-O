@@ -28,7 +28,7 @@ if option == 'Acido-Base (Fuertes)':
       if mT1<mA:
         C1= (float(mA)-float(mT1))/(float(VA)+float(a))
         ph1= np.log10(float(C1))*-1
-      elif mT1=mA:
+      elif mT1==mA:
         ph1==7
       elif mT1>mA:
         C1= (float(mT1)-float(mA))/(float(VA)+float(a))
