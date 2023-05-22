@@ -4,6 +4,12 @@ import numpy as np
 
 st.title('_Curvas de Titulación_')
 
+boton = st.button(Créditos)
+if boton:
+  with st.sidebar:
+    with st.echo():
+        st.write("Made by Fernando Aguilera, Gael Arambula y Andrés Fernández.")
+
 option = st.selectbox(
   'Selecciona el tipo de curva',
   ('Acido-Base (Fuertes)', 'Base-Acido (Fuertes)', 'Experimental'))
@@ -437,8 +443,3 @@ elif option == 'Experimental':
   datos
   st.line_chart(datos, x=[a, b, c, d, e, f, g], y='pH')
   
-boton = st.button(Créditos)
-if boton:
-  with st.sidebar:
-    with st.echo():
-        st.write("Made by Fernando Aguilera, Gael Arambula y Andrés Fernández.")
