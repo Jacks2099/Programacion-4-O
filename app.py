@@ -37,7 +37,7 @@ if option == 'Acido-Base (Fuertes)':
       if mT2<mA:
         C2= (float(mA)-float(mT2))/(float(VA)+float(b))
         ph2= np.log10(float(C2))*-1
-      elif mT2=mA:
+      elif mT2==mA:
         ph2==7
       elif mT2>mA:
         C2= (float(mT2)-float(mA))/(float(VA)+float(b))
@@ -46,7 +46,7 @@ if option == 'Acido-Base (Fuertes)':
       if mT3<mA:
         C3= (float(mA)-float(mT3))/(float(VA)+float(c))
         ph3= np.log10(float(C3))*-1
-      elif mT3=mA:
+      elif mT3==mA:
         ph3==7
       elif mT3>mA:
         C3= (float(mT3)-float(mA))/(float(VA)+float(c))
@@ -55,18 +55,18 @@ if option == 'Acido-Base (Fuertes)':
       if mT4<mA:
         C4= (float(mA)-float(mT4))/(float(VA)+float(d))
         ph4= np.log10(float(C4))*-1
-      elif mT4=mA:
+      elif mT4==mA:
         ph4==7
       elif mT4>mA:
         C4= (float(mT4)-float(mA))/(float(VA)+float(d))
         ph4= 14+np.log10(float(C4))
       mT5 = np.multiply(float(CT), float(e))
-      if mT4<mA:
+      if mT5<mA:
         C5= (float(mA)-float(mT5))/(float(VA)+float(e))
         ph5= np.log10(float(C4))*-1
-      elif mT4=mA:
+      elif mT5==mA:
         ph5==7
-      elif mT4>mA:
+      elif mT5>mA:
         C5= (float(mT5)-float(mA))/(float(VA)+float(e))
         ph5= 14+np.log10(float(C5))
       
