@@ -1033,9 +1033,6 @@ elif option == 'Base-Acido (Fuertes)':
 
       st.line_chart(datos, x=[a, b, c, d, e, f, g, h, i, j], y='pH')
 
-st.write("Made by Fernando Aguilera, Andrés Fernández y Gael Arámbula")
-
-
 elif option == 'Experimental':
   ph1=float(st.text_input('Ingresa el primer pH:', value=' '))
   ph2=float(st.text_input('Ingresa el segundo pH:', value=' '))
