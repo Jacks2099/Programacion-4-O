@@ -549,7 +549,7 @@ elif option == 'Base-Acido (Fuertes)':
       mT2 = np.multiply(float(CT), float(b))
       if mT2<mA:
         C2= (float(mA)-float(mT2))/(float(VA)+float(b))
-        ph2= 14+np.log10(float(C2))-1
+        ph2= 14+np.log10(float(C2))
       elif mT2==mA:
         ph2=7
       elif mT2>mA:
